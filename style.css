@@ -1,9 +1,3 @@
-.calculadora{
-    display:block;
-    margin:0 auto;
-    padding: 20px;
-    background-color: grey;
-    width: 300px;
-    height: 500px;
-    border-radius: 25px;
+.calculadora {
+    background-color: red;
 }
