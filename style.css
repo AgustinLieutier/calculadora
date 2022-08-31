@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .calculadora{
     display: block;
     margin: 0 auto;
@@ -7,3 +8,8 @@
     height: 500px;
     border-radius: 25px;
 }
+=======
+.calculadora {
+    background-color: red;
+}
+>>>>>>> 78615f780f1b96c23dccf6c5506c81aa8560f64e
