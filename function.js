@@ -107,7 +107,12 @@ function resolver(){
             res = parseFloat(operand_A) * parseFloat(operand_B);
             break;
         case "÷":
-            res = parseFloat(operand_A) / parseFloat(operand_B);
+            if (0 == operand_B){
+                res = "ERROR";
+            }
+            else{
+                res = parseFloat(operand_A) / parseFloat(operand_B);
+            }
             break;
     }
     clearear();
