@@ -17,7 +17,7 @@ function init(){
     var uno = document.getElementById("uno");
     var resta = document.getElementById("resta");
     var igual = document.getElementById("igual");
-    var clear = document.getElementById("clear");
+    var limpiar = document.getElementById("limpiar");
     var cero = document.getElementById("cero");
     var suma = document.getElementById("suma");
 
