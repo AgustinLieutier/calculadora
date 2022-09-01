@@ -1,3 +1,7 @@
+var operand_A;
+var operand_B;
+var operand_C;
+
 function init(){
     var resultado = document.getElementById("resultado");
     var siete = document.getElementById("siete");
@@ -18,33 +22,38 @@ function init(){
     var suma = document.getElementById("suma");
 
     uno.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "1";
+        resultado.textContent = resultado.textContent + "1";
     }
     dos.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "2";
+        resultado.textContent = resultado.textContent + "2";
     }
     tres.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "3";
+        resultado.textContent = resultado.textContent + "3";
     }
     cuatro.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "4";
+        resultado.textContent = resultado.textContent + "4";
     }
     cinco.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "5";
+        resultado.textContent = resultado.textContent + "5";
     }
     seis.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "6";
+        resultado.textContent = resultado.textContent + "6";
     }
     siete.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "7";
+        resultado.textContent = resultado.textContent + "7";
     }
     ocho.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "8";
+        resultado.textContent = resultado.textContent + "8";
     }
     siete.onclick = function(e){
-        resultado.TextContent = resultado.TextContent + "9";
+        resultado.textContent = resultado.textContent + "9";
+    }
+    reset.onclick = function(e){
+        resetear();
     }
 
+    suma.onclick = function(e){    
 
-    
+    }
+
 }
