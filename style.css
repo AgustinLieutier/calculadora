@@ -36,6 +36,7 @@
     background-color: white;
     border-radius: 10px;
     overflow-y: scroll;
+    overflow-y: hidden;
 
 }
 .titulo{
