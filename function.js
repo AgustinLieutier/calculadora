@@ -3,23 +3,23 @@ var operand_B;
 var operacion;
 
 function init(){
-    var resultado = document.getElementById("resultado");
-    var siete = document.getElementById("siete");
-    var ocho = document.getElementById("ocho");
-    var nueve = document.getElementById("nueve");
-    var division = document.getElementById("division");
-    var cuatro = document.getElementById("cuatro");
-    var cinco = document.getElementById("cinco");
-    var seis = document.getElementById("seis");
-    var multiplicacion = document.getElementById("multiplicacion");
-    var tres = document.getElementById("tres");
-    var dos = document.getElementById("dos");
-    var uno = document.getElementById("uno");
-    var resta = document.getElementById("resta");
-    var igual = document.getElementById("igual");
-    var limpiar = document.getElementById("limpiar");
-    var cero = document.getElementById("cero");
-    var suma = document.getElementById("suma");
+    var resultado = document.getElementById('resultado');
+    var reset = document.getElementById('reset');
+    var suma = document.getElementById('suma');
+    var resta = document.getElementById('resta');
+    var multiplicacion = document.getElementById('multiplicacion');
+    var division = document.getElementById('division');
+    var igual = document.getElementById('igual');
+    var uno = document.getElementById('uno');
+    var dos = document.getElementById('dos');
+    var tres = document.getElementById('tres');
+    var cuatro = document.getElementById('cuatro');
+    var cinco = document.getElementById('cinco');
+    var seis = document.getElementById('seis');
+    var siete = document.getElementById('siete');
+    var ocho = document.getElementById('ocho');
+    var nueve = document.getElementById('nueve');
+    var cero = document.getElementById('cero');
 
     uno.onclick = function(e){
         resultado.textContent = resultado.textContent + "1";
@@ -50,9 +50,6 @@ function init(){
     }
     cero.onclick = function(e){
         resultado.textContent = resultado.textContent + "0";    
-    }
-    reset.onclick = function(e){
-        resetear();
     }
 
     suma.onclick = function(e){    
@@ -85,6 +82,13 @@ function init(){
 function limpiar(){
     resultado.textContent = "";
 }
+function resetear(){
+    resultado.textContent = "";
+    operand_A = 0;
+    operand_B = 0;
+    operacion = "";
+}
+
 
 
 function resolver(){
@@ -94,26 +98,17 @@ function resolver(){
             res = parseFloat(operand_A) + parseFloat(operand_B);
             break;
         case "-":
-            res = parseFloat(operand_A) + parseFloat(operand_B);
+            res = parseFloat(operand_A) - parseFloat(operand_B);
             break;
         case "x":
-            res = parseFloat(operand_A) + parseFloat(operand_B);
+            res = parseFloat(operand_A) * parseFloat(operand_B);
             break;
         case "÷":
-            res = parseFloat(operand_A) + parseFloat(operand_B);
+            res = parseFloat(operand_A) / parseFloat(operand_B);
             break;
     }
     resetear();
     resultado.textContent = res;
-}
-function limpiar(){
-    resultado.textContent = "";
-}
-function resetear(){
-    resultado.textContent = "";
-    operand_A = 0;
-    operand_B = 0;
-    operacion = "";
 }
 
 
