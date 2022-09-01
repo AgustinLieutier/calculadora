@@ -7,3 +7,22 @@
     height: 500px;
     border-radius: 25px;
 }
+.calculadora td button{
+    display: block;
+    width: 63px;
+    height: 63px;
+    font-size: 25px;
+    border-radius: 6px;
+}
+#resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 100px;
+    line-height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
