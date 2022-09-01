@@ -4,7 +4,7 @@ var operacion;
 
 function init(){
     var resultado = document.getElementById('resultado');
-    var reset = document.getElementById('reset');
+    var clear = document.getElementById('clear');
     var suma = document.getElementById('suma');
     var resta = document.getElementById('resta');
     var multiplicacion = document.getElementById('multiplicacion');
@@ -69,12 +69,14 @@ function init(){
     }
     division.onclick = function(e){    
         operand_A = resultado.textContent;
-        
         limpiar();
     }
     igual.onclick = function(e){
         operand_B = resultado.textContent;
         resolver()
+    }
+    clear.onclick = function(e){
+        limpiar()
     }
     
 }
@@ -82,7 +84,7 @@ function init(){
 function limpiar(){
     resultado.textContent = "";
 }
-function resetear(){
+function clearear(){
     resultado.textContent = "";
     operand_A = 0;
     operand_B = 0;
@@ -107,7 +109,7 @@ function resolver(){
             res = parseFloat(operand_A) / parseFloat(operand_B);
             break;
     }
-    resetear();
+    clearear();
     resultado.textContent = res;
 }
 
