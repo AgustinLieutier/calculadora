@@ -16,4 +16,35 @@ function init(){
     var clear = document.getElementById("clear");
     var cero = document.getElementById("cero");
     var suma = document.getElementById("suma");
+
+    uno.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "1";
+    }
+    dos.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "2";
+    }
+    tres.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "3";
+    }
+    cuatro.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "4";
+    }
+    cinco.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "5";
+    }
+    seis.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "6";
+    }
+    siete.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "7";
+    }
+    ocho.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "8";
+    }
+    siete.onclick = function(e){
+        resultado.TextContent = resultado.TextContent + "9";
+    }
+
+
+    
 }
