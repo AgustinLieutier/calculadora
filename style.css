@@ -35,6 +35,7 @@
     line-height: 75px;
     background-color: white;
     border-radius: 10px;
+    overflow-y: scroll;
 
 }
 .titulo{
