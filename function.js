@@ -69,7 +69,7 @@ function init(){
     }
     division.onclick = function(e){    
         operand_A = resultado.textContent;
-        operacion = "/";
+        operacion = "÷";
         limpiar();
     }
     igual.onclick = function(e){
