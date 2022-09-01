@@ -1,3 +1,7 @@
+var operand_A;
+var operand_B;
+var operand_C;
+
 function init(){
     var resultado = document.getElementById("resultado");
     var siete = document.getElementById("siete");
@@ -16,4 +20,40 @@ function init(){
     var clear = document.getElementById("clear");
     var cero = document.getElementById("cero");
     var suma = document.getElementById("suma");
+
+    uno.onclick = function(e){
+        resultado.textContent = resultado.textContent + "1";
+    }
+    dos.onclick = function(e){
+        resultado.textContent = resultado.textContent + "2";
+    }
+    tres.onclick = function(e){
+        resultado.textContent = resultado.textContent + "3";
+    }
+    cuatro.onclick = function(e){
+        resultado.textContent = resultado.textContent + "4";
+    }
+    cinco.onclick = function(e){
+        resultado.textContent = resultado.textContent + "5";
+    }
+    seis.onclick = function(e){
+        resultado.textContent = resultado.textContent + "6";
+    }
+    siete.onclick = function(e){
+        resultado.textContent = resultado.textContent + "7";
+    }
+    ocho.onclick = function(e){
+        resultado.textContent = resultado.textContent + "8";
+    }
+    siete.onclick = function(e){
+        resultado.textContent = resultado.textContent + "9";
+    }
+    reset.onclick = function(e){
+        resetear();
+    }
+
+    suma.onclick = function(e){    
+
+    }
+
 }
