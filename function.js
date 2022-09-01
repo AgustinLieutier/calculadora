@@ -1,6 +1,6 @@
 var operand_A;
 var operand_B;
-var operand_C;
+var operacion;
 
 function init(){
     var resultado = document.getElementById("resultado");
@@ -45,15 +45,75 @@ function init(){
     ocho.onclick = function(e){
         resultado.textContent = resultado.textContent + "8";
     }
-    siete.onclick = function(e){
+    nueve.onclick = function(e){
         resultado.textContent = resultado.textContent + "9";
+    }
+    cero.onclick = function(e){
+        resultado.textContent = resultado.textContent + "0";    
     }
     reset.onclick = function(e){
         resetear();
     }
 
     suma.onclick = function(e){    
-
+        operand_A = resultado.textContent;
+        operacion  = "+";
+        limpiar();
     }
-
+    resta.onclick = function(e){    
+        operand_A = resultado.textContent;
+        operacion  = "-";
+        limpiar();
+    }
+    multiplicacion.onclick = function(e){    
+        operand_A = resultado.textContent;
+        operacion  = "x";
+        limpiar();
+    }
+    division.onclick = function(e){    
+        operand_A = resultado.textContent;
+        
+        limpiar();
+    }
+    igual.onclick = function(e){
+        operand_B = resultado.textContent;
+        resolver()
+    }
+    
 }
+
+function limpiar(){
+    resultado.textContent = "";
+}
+
+
+function resolver(){
+    var res = 0;
+    switch(operacion){
+        case "+":
+            res = parseFloat(operand_A) + parseFloat(operand_B);
+            break;
+        case "-":
+            res = parseFloat(operand_A) + parseFloat(operand_B);
+            break;
+        case "x":
+            res = parseFloat(operand_A) + parseFloat(operand_B);
+            break;
+        case "÷":
+            res = parseFloat(operand_A) + parseFloat(operand_B);
+            break;
+    }
+    resetear();
+    resultado.textContent = res;
+}
+function limpiar(){
+    resultado.textContent = "";
+}
+function resetear(){
+    resultado.textContent = "";
+    operand_A = 0;
+    operand_B = 0;
+    operacion = "";
+}
+
+
