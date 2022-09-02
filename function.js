@@ -1,5 +1,5 @@
-var operand_A;
-var operand_B;
+var operand_A  = 0;
+var operand_B = 0;
 var operacion;
 
 function init(){
