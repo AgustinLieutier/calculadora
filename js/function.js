@@ -51,27 +51,43 @@ function init(){
     cero.onclick = function(e){
         resultado.textContent = resultado.textContent + "0";    
     }
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     suma.onclick = function(e){    
-        operand_A = resultado.textContent;
+        // alert(!isNaN(resultado.textContent))
+        operand_A = parseInt(resultado.textContent);
+        // alert(operand_A)
+        // alert(operand_B)
         operacion  = "+";
         resultado.textContent = "";
     }
-    resta.onclick = function(e){    
-        operand_A = resultado.textContent;
+    //////////////////////////////////////////////////////////
+    resta.onclick = function(e){
+        // alert(!isNaN(resultado.textContent))
+        operand_A = parseInt(resultado.textContent);
+        // alert(operand_A)
+        // alert(operand_B)
         operacion  = "-";
         resultado.textContent = "";
     }
-    multiplicacion.onclick = function(e){    
-        operand_A = resultado.textContent;
+    ///////////////////////////////////////////////////////////
+    multiplicacion.onclick = function(e){   
+        // alert(!isNaN(resultado.textContent))
+        operand_A = parseInt(resultado.textContent);
+        // alert(operand_A)
+        // alert(operand_B) 
         operacion  = "x";
         resultado.textContent = "";
     }
+    ////////////////////////////////////////////////////////////
     division.onclick = function(e){    
-        operand_A = resultado.textContent;
+        // alert(!isNaN(resultado.textContent))
+        operand_A = parseInt(resultado.textContent);
+        // alert(operand_A)
+        // alert(operand_B)
         operacion = "÷";
         resultado.textContent = "";
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     igual.onclick = function(e){
         operand_B = resultado.textContent;
         resolver()
@@ -89,38 +105,42 @@ function limpiar(){
 
 
 function resolver(){
+    operand_B = parseInt(operand_B)
     // alert(operand_A)
     // alert(operand_B)
-    // alert(operacion)    
-    
-    // alert(Number.isInteger(operand_A))
-    // alert(Number.isInteger(operand_B))
+    // alert(operacion)
+    // alert(typeof operand_A)
+    // alert(typeof operand_B)    
+    // alert(isNaN(operand_A)  || isNaN(operand_B))
 
-    
-    if (!isNaN(operand_B) && !isNaN(operand_B)){
-        switch(operacion){
-            case "+":
-                res = parseFloat(operand_A) + parseFloat(operand_B);
-                break;
-            case "-":
-                res = parseFloat(operand_A) - parseFloat(operand_B);
-                break;
-            case "x":
-                res = parseFloat(operand_A) * parseFloat(operand_B);
-                break;
-            case "÷":
-                if (0 == operand_B){
-                    res = "ERROR";
-                }
-                else{
-                    res = parseFloat(operand_A) / parseFloat(operand_B);
-                }
-                break;
+   
+        if (isNaN(operand_A)  || isNaN(operand_B)){
+            alert("error de sintaxis");
+            init()
+            
         }
-    }else{
-        alert("error de sintaxis");
-        init();
-    }
+        else{ 
+            switch(operacion){
+            
+                case "+":
+                    res = parseFloat(operand_A) + parseFloat(operand_B);
+                    break;
+                case "-":
+                    res = parseFloat(operand_A) - parseFloat(operand_B);
+                    break;
+                case "x":
+                    res = parseFloat(operand_A) * parseFloat(operand_B);
+                    break;
+                case "÷":
+                    if (0 == operand_B){
+                        res = "ERROR";
+                    }
+                    else{
+                        res = parseFloat(operand_A) / parseFloat(operand_B);
+                    }
+                    break;
+                }    
+}
     limpiar();
     resultado.textContent = res;
 }
