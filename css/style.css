@@ -3,7 +3,7 @@
     margin: 0;
 }
 .body{
-    background-image: url('img/fondo.jpg');
+    background-image: url('../img/fondo.jpg');
     background-attachment: fixed;
 }
 .calculadora{
@@ -44,7 +44,7 @@
     text-align: center;
     font-family: 'Source Serif Pro', serif;
     color: white;
-    background-image: url('img/verde.png');
+    background-image: url('../img/verde.png');
     background-size: cover;
     padding: 20px;
 }

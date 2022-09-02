@@ -3,7 +3,7 @@
     padding: 0;
 }
 .body{
-    background-image: url('img/fondo3.png');
+    background-image: url('../img/fondo3.png');
 }
 .sesion{
     display: block;
