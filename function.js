@@ -89,11 +89,15 @@ function limpiar(){
 
 
 function resolver(){
-
     // alert(operand_A)
     // alert(operand_B)
     // alert(operacion)    
-    if (Number.isInteger(operand_A)  || Number.isInteger(operand_B)){
+    
+    // alert(Number.isInteger(operand_A))
+    // alert(Number.isInteger(operand_B))
+
+    
+    if (!isNaN(operand_B) && !isNaN(operand_B)){
         switch(operacion){
             case "+":
                 res = parseFloat(operand_A) + parseFloat(operand_B);
