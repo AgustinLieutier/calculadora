@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-image: url('img/fondo3.png');
+}
+.sesion{
+    display: block;
+    margin: 130px auto;
+    height: 280px;
+    width: 300px;
+    background-color: green ;
+    border: 4px black double;
+    border-radius: 4px;
+}
+#inicia{
+    margin-top: 10px;
+    margin-left:80px;
+    margin-bottom: 10px;
+}
+#nombre{
+    display: block;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 289px;
+}
+#contraseña{
+    display: block;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 289px;
+}
+#ok{
+    display: block;
+    margin-left: 10px;
+    width: 70px;
+    height: 20px;
+}
