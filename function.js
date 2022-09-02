@@ -1,5 +1,5 @@
-var operand_A  = 0;
-var operand_B = 0;
+var operand_A =0;
+var operand_B =0;
 var operacion;
 
 function init(){
@@ -55,22 +55,22 @@ function init(){
     suma.onclick = function(e){    
         operand_A = resultado.textContent;
         operacion  = "+";
-        limpiar();
+        resultado.textContent = "";
     }
     resta.onclick = function(e){    
         operand_A = resultado.textContent;
         operacion  = "-";
-        limpiar();
+        resultado.textContent = "";
     }
     multiplicacion.onclick = function(e){    
         operand_A = resultado.textContent;
         operacion  = "x";
-        limpiar();
+        resultado.textContent = "";
     }
     division.onclick = function(e){    
         operand_A = resultado.textContent;
         operacion = "÷";
-        limpiar();
+        resultado.textContent = "";
     }
     igual.onclick = function(e){
         operand_B = resultado.textContent;
@@ -84,38 +84,40 @@ function init(){
 
 function limpiar(){
     resultado.textContent = "";
-}
-function clearear(){
-    resultado.textContent = "";
-    operand_A = 0;
-    operand_B = 0;
     operacion = "";
 }
 
 
-
 function resolver(){
-    var res = 0;
-    switch(operacion){
-        case "+":
-            res = parseFloat(operand_A) + parseFloat(operand_B);
-            break;
-        case "-":
-            res = parseFloat(operand_A) - parseFloat(operand_B);
-            break;
-        case "x":
-            res = parseFloat(operand_A) * parseFloat(operand_B);
-            break;
-        case "÷":
-            if (0 == operand_B){
-                res = "ERROR";
-            }
-            else{
-                res = parseFloat(operand_A) / parseFloat(operand_B);
-            }
-            break;
+
+    // alert(operand_A)
+    // alert(operand_B)
+    // alert(operacion)    
+    if (Number.isInteger(operand_A)  || Number.isInteger(operand_B)){
+        switch(operacion){
+            case "+":
+                res = parseFloat(operand_A) + parseFloat(operand_B);
+                break;
+            case "-":
+                res = parseFloat(operand_A) - parseFloat(operand_B);
+                break;
+            case "x":
+                res = parseFloat(operand_A) * parseFloat(operand_B);
+                break;
+            case "÷":
+                if (0 == operand_B){
+                    res = "ERROR";
+                }
+                else{
+                    res = parseFloat(operand_A) / parseFloat(operand_B);
+                }
+                break;
+        }
+    }else{
+        alert("error de sintaxis");
+        init();
     }
-    clearear();
+    limpiar();
     resultado.textContent = res;
 }
 
