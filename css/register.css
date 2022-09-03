@@ -1,0 +1,7 @@
+.body{
+    background: lightgrey;
+    background-image: url(logo-USAL.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
