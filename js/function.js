@@ -133,7 +133,7 @@ function resolver(){
                     break;
                 case "÷":
                     if (0 == operand_B){
-                        res = "Error de sintaxis";
+                        res = "Error";
                     }
                     else{
                         res = parseFloat(operand_A) / parseFloat(operand_B);
