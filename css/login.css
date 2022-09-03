@@ -3,41 +3,36 @@
     padding: 0;
 }
 .body{
-    background-image: url('../img/fondo3.png');
+    background: lightgrey;
 }
 .sesion{
     display: block;
-    margin: 130px auto;
+    margin: 140px auto;
     height: 280px;
     width: 300px;
-    background-color: green ;
-    border: 4px black double;
-    border-radius: 4px;
+    background: teal ;
+    border: 3px black solid;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px 1px black;
+}
+.sesion input{
+    outline: 1px solid black;
+    display: block;
+    margin: 10px 0px 22px 3px;
+    height: 30px;
+    width: 289px;
 }
 #inicia{
-    margin-top: 10px;
-    margin-left:80px;
-    margin-bottom: 10px;
-}
-#nombre{
-    display: block;
-    margin-top: 10px;
-    margin-left: 3px;
-    margin-bottom: 10px;
-    height: 30px;
-    width: 289px;
-}
-#contraseña{
-    display: block;
-    margin-top: 10px;
-    margin-left: 3px;
-    margin-bottom: 30px;
-    height: 30px;
-    width: 289px;
+    margin: 10px 0px 10px 80px;
 }
 #submit{
     display: block;
     margin-left: 100px;
     width: 90px;
     height: 20px;
+}
+#submit:hover{
+    background: lightgrey;
+    border: 2px black solid;
+    border-radius: 3px;
 }

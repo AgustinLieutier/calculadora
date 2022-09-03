@@ -28,15 +28,12 @@
 }
 .contenido{
     display: inline-block;
-    margin-left: 300px;
-    margin-right: 300px;
-    background-color: white;
-    border:2px solid black;
+    margin: 0px 300px 0px 300px;
+    background: white;
+    outline:2px solid black;
 }
 .texto{
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 5px;
+    padding: 30px 0px 40px 5px;
     line-height: 0.8;
     font-size: 30px;
     font-weight: 450;
@@ -70,14 +67,22 @@
     width: 265px;
     height: 110px;
     line-height: 75px;
-    background-color: white;
+    background: white;
     border-radius: 10px;
     overflow-y: hidden;
 }
 #descripcion{
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin: 70px 0px 20px 0px;
     padding: 10px;
+}
+.prueba{
+    position: absolute;
+    top: 140px;
+    left: 1060px;
+    color: black;
+    background: white;
+    outline: 2px solid black;
+    padding: 0px 250px 918px 0px;
 }
 .footer{
     display: block;
