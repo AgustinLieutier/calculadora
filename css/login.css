@@ -4,6 +4,9 @@
 }
 .body{
     background: lightgrey;
+    background-image: url(usal.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 .sesion{
     display: block;
