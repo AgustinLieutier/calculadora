@@ -37,6 +37,6 @@
 }
 #submit:hover{
     background: lightgrey;
-    border: 2px black solid;
-    border-radius: 3px;
+    border: 1px black solid;
+    border-radius: 2px;
 }
