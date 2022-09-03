@@ -84,15 +84,6 @@
     margin: 70px 0px 20px 0px;
     padding: 10px;
 }
-.prueba{
-    position: absolute;
-    top: 140px;
-    left: 1060px;
-    color: black;
-    background: white;
-    outline: 2px solid black;
-    padding: 0px 250px 918px 0px;
-}
 .footer{
     display: block;
     padding: 15px;
