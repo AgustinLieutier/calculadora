@@ -12,26 +12,35 @@
 .sesion{
     display: block;
     margin: 140px auto;
-    height: 280px;
-    width: 300px;
-    background: teal ;
-    border: 3px black solid;
+    height: 320px;
+    width: 400px;
+    background-color: white;
+    border: 2px black solid;
     border-radius: 6px;
-    box-shadow: 3px 3px 10px 1px black;
+    box-shadow: 2px 2px 7px 1px black;
 }
 .sesion input{
     outline: 1px solid black;
     display: block;
-    margin: 10px 0px 22px 3px;
+    margin: 10px 0px 22px 4px;
     height: 30px;
-    width: 289px;
+    width: 387px;
 }
 #inicia{
-    margin: 10px 0px 10px 80px;
+    margin: 10px 0px 10px 130px;
+}
+#nombre{
+    margin-left: 3px;
+    font-family: 'Cinzel', serif;
+}
+#contraseña{
+    margin-left: 3px;
+    font-family: 'Source Serif Pro';
 }
 #submit{
     display: block;
-    margin-left: 100px;
+    margin-top: 43px;
+    margin-left: 149px;
     width: 90px;
     height: 20px;
 }
