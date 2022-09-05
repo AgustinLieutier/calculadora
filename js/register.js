@@ -1,8 +1,8 @@
-const name = document.getElementsById("nombre")
-const surname = document.getElementsById("apellido")
-const email = document.getElementsById("correo")
-const password = document.getElementsById("contraseña")
-const form =document.getElementById("form")
+const name = document.getElementsById("nombre");
+const surname = document.getElementsById("apellido");
+const email = document.getElementsById("correo");
+const password = document.getElementsById("contraseña");
+const form =document.getElementById("form");
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -10,7 +10,7 @@ form.addEventListener("submit", e=>{
     if(!regexEmail.test(email.value)){
         alert("El email no es valido")
     }
-    if(password.value.length < 8){
+    if(!password.value.length < 8){
         alert("La contraseña no es valida")
     }
 }
