@@ -7,33 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
 </head>
-<body class="body">
-  <form action="action_page.php">
-    <div class="container">
-      <h1>Registrese</h1>
-      <p>Rellene este formulario, para poder crear su cuenta.</p>
-      <hr>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Ingrese su cuenta de email" name="email" id="email" required>
+<body>
+  <section class="form-register">
+    <h4>Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="contreseña" id="contraseña" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#"> Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="/html/login.html">¿Ya tienes una cuenta?</a></p>
+  </section>
 
-      <label for="usuario"><b>Usuario</b></label>
-      <input type="text" placeholder="Ingrese su Nombre de usuario" name="usuario" id="usuario" required>
-  
-      <label for="contra"><b>Contraseña</b></label>
-      <input type="password" placeholder="Ingrese su Contraseña" name="contra" id="contra" required>
-  
-      <label for="rep-contraseña"><b>Repita la contraseña</b></label>
-      <input type="password" placeholder="Repetir contraseña" name="rep-contraseña" id="rep-contraseña" required>
-      <hr>
-  
-      <button type="ingresar" class="Registrar">Registrar</button>
-    </div>
-  
-    <div class="ingreso">
-      <p>¿Ya tiene una cuenta? <a href="../html/login.html">Ingrese</a>.</p>
-    </div>
-  </form>
 </body>
 </html>
   
