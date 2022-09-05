@@ -8,15 +8,29 @@
     <script src ="../js/login.js"></script>
     <title>Inicio de sesión</title>
 </head>
-<body class="body">
-    
-    <div class="sesion">
-        <h2 id="inicia"><b>Inicia Sesión</b></h2>
-        <h3 id="nombre">Nombre</h3>
-        <input></input>
-        <h3 id="contraseña">Contraseña</h3>
-        <input type="password"></input>
-        <input type="submit" id="submit" value="iniciar sesion" onclick="validacion()">
+<body class="container">
+    <div class="form_area">
+        <h4 class="title">SING UP</h4>
+        <form action="">
+            <div class="form_group">
+                <label for="name" class="sub_title">Name</label>
+                <input type="text" class="form_style" id="name" placeholder="Enter your Name">
+            </div>
+            
+            <div class="form_group">
+                <label for="email" class="sub_title">Email</label>
+                <input type="text" class="form_style" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form_group">
+                <label for="password" class="sub_title">Password</label>\
+                <input type="password" class="form_style" id="password" placeholder="Enter your password">
+            </div>
+            <div>
+                <button class="btn">SING UP</button>
+                <p>Have an account? <a href="" class="link">Login here!</a></p>
+            </div>        
+        </form>
     </div>
     </body>
     </html>

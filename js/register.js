@@ -13,4 +13,4 @@ form.addEventListener("submit", e=>{
     if(!password.value.length < 8){
         alert("La contraseña no es valida")
     }
-}
+})

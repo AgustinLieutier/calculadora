@@ -1,51 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 400,500,600,700,800,900');
+
 *{
     margin: 0;
     padding: 0;
 }
 .body{
-    background: lightgrey;
-    background-image: url(usal.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 700px;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: #7b4397;
 }
-.sesion{
-    display: block;
-    margin: 140px auto;
-    height: 320px;
-    width: 400px;
-    background-color: white;
-    border: 2px black solid;
-    border-radius: 6px;
-    box-shadow: 2px 2px 7px 1px black;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
 }
-.sesion input{
-    outline: 1px solid black;
-    display: block;
-    margin: 10px 0px 22px 4px;
-    height: 30px;
-    width: 387px;
+.from_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 30px 35px 2px #52206b;
 }
-#inicia{
-    margin: 10px 0px 10px 130px;
+
+.title {
+    color: #7b4397;
+    font-weight: 900;
+    font-size: 1.5en;
+    margin-top: 20px;
 }
-#nombre{
-    margin-left: 3px;
-    font-family: 'Cinzel', serif;
+
+.sub_title {
+    font-weight: 600;
+    margin: 5px 0;
 }
-#contraseña{
-    margin-left: 3px;
-    font-family: 'Source Serif Pro';
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 20px;
 }
-#submit{
-    display: block;
-    margin-top: 43px;
-    margin-left: 149px;
-    width: 90px;
-    height: 20px;
+
+.form_style {
+    outline: none;
+    border: 2px solid #000;
+    box-shadow: 3px 4px 0px 1px #000;
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+
 }
-#submit:hover{
-    background: lightgrey;
-    border: 1px black solid;
-    border-radius: 2px;
+
+.form_style:focus, .btn:focus {
+    transform:translateY(4px);
+    box-shadow: 1px 2px 0px 0px #000
+}
+
+.btn {
+    padding: 15px;
+    margin: 30px 0px;
+    width: 310px;
+    font-size: 15px;
+    background: #7b4397;
+    border-radius: 30px;
+    font-weight: 800;
+    box-shadow: 5px 5px 0px 0px #000;
+}
+
+p{
+    margin: 20px 0px;
+}
+
+.link {
+    font-weight: 800;
 }
