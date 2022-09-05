@@ -5,8 +5,8 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: 20000px;
     background-image: url(/img/registro.png);
 }
 
