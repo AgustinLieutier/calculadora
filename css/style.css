@@ -50,11 +50,13 @@
     display: block;
     margin: 0 auto;
     padding: 20px;
-    background-image: url('../img/verde.png');
+    background: #283c86;
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);
+    background: linear-gradient(to right, #45a2474b, #283c8654),url('../img/verde.png');
     background-size: cover;
     width: 317px;
     height: 490px;
-    border: 7px inset darkgreen;
+    border: 7px double black;
     border-radius: 25px;
  }
 .calculadora td button{
@@ -62,10 +64,14 @@
     height: 64px;
     font-size: 25px;
     border: 3px solid black;
+    box-shadow: 1px 1px 2px 1px black;
     border-radius: 6px;
 }
-.calculadora td button:hover{   
+.calculadora td button:focus{   
     border: solid 1px black;
+    box-shadow: none;
+    background: black;
+    color: white;
 }
 #resultado{
     display:block;
@@ -76,6 +82,7 @@
     height: 110px;
     line-height: 75px;
     background: white;
+    border: 3px solid black;
     border-radius: 10px;
     overflow-y: hidden;
 }
@@ -97,8 +104,11 @@
 .ig a:hover{
     color: blue;
 }
-.ig a:link{
-    color: red;
+.ig a:visited{
+    color: grey;
+}
+.ig:active{
+    color: lightblue;
 }
 .ig img{
     height: 15px;
