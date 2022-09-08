@@ -5,7 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: url('../img/logo-usal2.png'), linear-gradient(90deg,green,black);
+    background-position: center center;
+    background-size: cover;
+}
+/*
 body {
     background-size: 20000px;
     background: #283c86;
@@ -13,7 +18,7 @@ body {
     background: linear-gradient(to right, #45a24786, #283c8688),url('../img/verde.png');
     background-size: cover;
 }
-
+*/
 .form-register{
     display: block;
     width: 400px;
@@ -32,7 +37,6 @@ body {
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 20px;
-
 }
 
 #terms{
@@ -48,14 +52,21 @@ body {
     box-shadow: 3px 4px 0px 1px black;
     border-radius: 4px;
     margin-bottom: 16px;
+<<<<<<< HEAD
+=======
+    border: 1px solid  #016f09;
+>>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
     font-family: 'calibri';
     font-size: 15px;
     color: white;
+<<<<<<< HEAD
 }
 
 .controls:focus{
     transform:translateY(4px);
     box-shadow: none;
+=======
+>>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
 }
 
 .form-register p {
@@ -70,7 +81,22 @@ body {
 }
 
 .form-register a:hover {
+<<<<<<< HEAD
     color: blue;
+=======
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #016f09;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+>>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
 }
 
 .botons {
