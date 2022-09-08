@@ -6,9 +6,11 @@
 
 body{
     background: url('../img/logo-usal.png'), linear-gradient(90deg,green,black);
-    background-size: 100% 100%;
-    background-size: cover;
-    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    backdrop-filter: blur(10px);
+    
 }
 
 .form-register{
