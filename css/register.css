@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
-    background-size: 20000px;
-    background: #283c86;
-    background: -webkit-linear-gradient(to right, #45a247, #283c86);
-    background: linear-gradient(to right, #45a24786, #283c8688),url('../img/verde.png');
+body{
+    background: url('../img/logo-usal.png'), linear-gradient(90deg,green,black);
+    background-size: 400% 400%;
     background-size: cover;
+    position: relative;
 }
 
 .form-register{
