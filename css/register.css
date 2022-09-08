@@ -3,13 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background: url('../img/logo-usal2.png'), linear-gradient(90deg,green,black);
     background-position: center center;
     background-size: cover;
 }
-
+/*
+body {
+    background-size: 20000px;
+    background: #283c86;
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);
+    background: linear-gradient(to right, #45a24786, #283c8688),url('../img/verde.png');
+    background-size: cover;
+}
+*/
 .form-register{
     display: block;
     width: 400px;
