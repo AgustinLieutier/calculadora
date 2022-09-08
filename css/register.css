@@ -8,7 +8,7 @@ body{
     background: url('../img/logo-usal.png'), linear-gradient(90deg,green,black);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
     backdrop-filter: blur(10px);
     
 }
