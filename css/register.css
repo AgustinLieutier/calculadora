@@ -6,7 +6,7 @@
 
 body{
     background: url('../img/logo-usal.png'), linear-gradient(90deg,green,black);
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     background-size: cover;
     position: relative;
 }
