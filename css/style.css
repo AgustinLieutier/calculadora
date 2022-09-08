@@ -68,10 +68,9 @@
     border-radius: 6px;
 }
 .calculadora td button:active{   
-    border: solid 1px black;
+    border: none;
     box-shadow: none;
-    background: black;
-    color: white;
+    transition: .2s;
 }
 #resultado{
     display:block;
@@ -93,7 +92,10 @@
 .footer{
     display: block;
     padding: 15px;
-    background-image: url('../img/verde.png');
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243b5575, #141e304f),black;
+
     background-size: cover;
     color: white;
 }
@@ -139,5 +141,5 @@ table{
 }
 .ig img{
     height: 15px;
-    width: 15px;
+    width: 25px;
 }

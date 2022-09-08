@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 400,500,600,700,800,900');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,18 +17,20 @@ body {
 .form-register{
     display: block;
     width: 400px;
-    background-color: #24303c;
+    background-color: white;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
-    border-radius: 4px;
+    border-radius: 20px;
     font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 13px 13px 5px #000;
 }
 
 .form-register h4 {
-    font-size: 22px;
+    padding: auto auto;
+    color: #359b37e3;
+    font-size: 25px;
+    font-weight: 900;
     margin-bottom: 20px;
 
 }
@@ -39,15 +43,19 @@ body {
 
 .controls {
     width: 300px;
-    background-color: #24303c;
     padding: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 4px 0px 1px black;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid  #1f53c5;
     font-family: 'calibri';
-    font-size: 18px;
+    font-size: 15px;
     color: white;
+}
 
+.controls:focus{
+    transform:translateY(4px);
+    box-shadow: none;
 }
 
 .form-register p {
@@ -57,25 +65,27 @@ body {
 }
 
 .form-register a {
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 
 .form-register a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+    color: blue;
 }
 
 .botons {
-    box-shadow: 7px 5px 37px #000;
+    width: 100%;
+    background: #359b37e3;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: 3px 4px 0px 1px #000;
+}
+.botons:focus{
+    transform:translateY(4px);
+    box-shadow: 1px 2px 0px 0px black;
 }
