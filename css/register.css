@@ -5,12 +5,11 @@
 }
 
 body{
-    background: url('../img/logo-usal.png'), linear-gradient(90deg,green,black);
+    background: url('../img/logo-usal2.png'), linear-gradient(90deg,green,black);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    backdrop-filter: blur(10px);
-    
+    background-size: cover;
 }
 
 .form-register{
@@ -29,7 +28,6 @@ body{
 .form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
-
 }
 
 #terms{
@@ -48,7 +46,6 @@ body{
     font-family: 'calibri';
     font-size: 18px;
     color: white;
-
 }
 
 .form-register p {
