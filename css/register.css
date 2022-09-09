@@ -52,21 +52,15 @@ body {
     box-shadow: 3px 4px 0px 1px black;
     border-radius: 4px;
     margin-bottom: 16px;
-<<<<<<< HEAD
-=======
     border: 1px solid  #016f09;
->>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
     font-family: 'calibri';
     font-size: 15px;
     color: white;
-<<<<<<< HEAD
 }
 
 .controls:focus{
     transform:translateY(4px);
     box-shadow: none;
-=======
->>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
 }
 
 .form-register p {
@@ -81,10 +75,7 @@ body {
 }
 
 .form-register a:hover {
-<<<<<<< HEAD
     color: blue;
-=======
-    color: white;
     text-decoration: underline;
 }
 
@@ -96,7 +87,6 @@ body {
     color: white;
     margin: 16px 0;
     font-size: 16px;
->>>>>>> 4e29a3956e2fc3147ab14a7d4c0fae3e788115f3
 }
 
 .botons {
