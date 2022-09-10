@@ -11,11 +11,11 @@
   <section class="form-register">
     <form actions="" method="post" id="form">
       <h4>REGISTRO</h4>
-      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-      <input class="controls" type="password" name="contreseña" id="contraseña" placeholder="Ingrese su Contraseña"><br>
-      <input type="checkbox"><p id="terms">Estoy de acuerdo con <a href="#"> Terminos y Condiciones</a></p>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+      <input class="controls" type="password" name="contreseña" id="contraseña" pattern="[a-z 0-9]{7,}" placeholder="Ingrese su Contraseña" required><br>
+      <input type="checkbox" required><p id="terms">Estoy de acuerdo con los <a href="#"> Terminos y Condiciones</a></p>
       <input class="botons" type="submit" value="REGISTRAR">
       <p><a href="login.html">¿Ya tienes una cuenta?</a></p>
     </form>
